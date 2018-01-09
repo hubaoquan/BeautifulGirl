@@ -29,7 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.2"
             android:background="@color/colorAccent"
-            android:text="@string/previous" />
+            android:text="换一波" />
 
         <Button
             android:id="@+id/but_next"
