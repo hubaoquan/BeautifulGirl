@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BeautifulGirl</string>
+    <string name="previous">上一张</string>
+    <string name="next">下一张</string>
 </resources>
