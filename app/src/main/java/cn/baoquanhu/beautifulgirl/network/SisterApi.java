@@ -1,19 +1,17 @@
-package cn.baoquanhu.beautifulgirl;
+package cn.baoquanhu.beautifulgirl.network;
 
 import android.util.Log;
-import android.widget.EditText;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.PriorityQueue;
+
+import cn.baoquanhu.beautifulgirl.bean.entity.Sister;
 
 /**
  * Created by Quincy on 2018/1/9.

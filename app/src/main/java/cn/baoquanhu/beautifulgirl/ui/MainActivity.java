@@ -1,4 +1,4 @@
-package cn.baoquanhu.beautifulgirl;
+package cn.baoquanhu.beautifulgirl.ui;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,6 +10,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+
+import cn.baoquanhu.beautifulgirl.imgloader.PicLoader;
+import cn.baoquanhu.beautifulgirl.R;
+import cn.baoquanhu.beautifulgirl.bean.entity.Sister;
+import cn.baoquanhu.beautifulgirl.imgloader.SisterLoader;
+import cn.baoquanhu.beautifulgirl.network.SisterApi;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -23,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private PicLoader loader;
     private SisterApi sisterApi;
     private SisterTask sisterTask;
+    private SisterLoader mLoader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sisterApi = new SisterApi();
         loader = new PicLoader();
         Log.e("", "initUI: ");
+        mLoader = SisterLoader.getInstance(MainActivity.this);
         initUI();
-
         initData();
 
     }
@@ -63,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         curPos = 0;
                     }
                     Log.e("Main",data.get(curPos).getUrl());
-                    loader.loadImg(showImg, data.get(curPos).getUrl());
+                    mLoader.bindBitmap(data.get(curPos).getUrl(),showImg,400,400);
                     curPos++;
                 }
                 break;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="cn.baoquanhu.beautifulgirl.MainActivity">
+    tools:context="cn.baoquanhu.beautifulgirl.ui.MainActivity">
 
     <ImageView
         android:id="@+id/img_show"

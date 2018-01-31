@@ -1,4 +1,4 @@
-package cn.baoquanhu.beautifulgirl;
+package cn.baoquanhu.beautifulgirl.imgloader;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
