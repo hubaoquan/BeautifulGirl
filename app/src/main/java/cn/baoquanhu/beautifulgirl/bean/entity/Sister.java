@@ -2,6 +2,7 @@ package cn.baoquanhu.beautifulgirl.bean.entity;
 
 /**
  * Created by Quincy on 2018/1/9.
+ * Json图片信息
  */
 
 public class Sister {
